@@ -18,7 +18,7 @@
   const hamburger   = document.getElementById('hamburger');
   const navLinks    = document.getElementById('navLinks');
   const allNavLinks = document.querySelectorAll('.nav-link');
-  const sections    = document.querySelectorAll('section[id], div[id]');
+  const sections    = document.querySelectorAll('#home, #games, #about, #team, #contact');
   const fadeEls     = document.querySelectorAll('.fade-in');
   const statNumbers = document.querySelectorAll('.stat-number[data-target]');
   const contactForm = document.getElementById('contactForm');

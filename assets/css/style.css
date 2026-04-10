@@ -30,7 +30,7 @@
   --transition: 0.3s ease;
 
   /* Nav height */
-  --nav-h: 68px;
+  --nav-h: clamp(60px, 10vw, 68px);
 }
 
 /* ── Reset / Base ───────────────────────────────── */
