@@ -1,44 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="Coming Soon">
-    <meta name="description" content="In the meantime, Stay tuned. We are almost ready to launch.">
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://common-coming-soon-page.netlify.app/">
-    <meta property="og:title" content="Coming Soon">
-    <meta property="og:description" content="In the meantime, Stay tuned. We are almost ready to launch.">
-    <meta property="og:image" content="https://common-coming-soon-page.netlify.app/assets/images/og/og-image.jpg">
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://common-coming-soon-page.netlify.app/">
-    <meta property="twitter:title" content="Coming Soon">
-    <meta property="twitter:description" content="In the meantime, Stay tuned. We are almost ready to launch.">
-    <meta property="twitter:image" content="https://common-coming-soon-page.netlify.app/assets/images/og/og-image.jpg">
-    <!-- Favicon Link -->
-	<link rel="icon" type="image/png" sizes="512x512" href="./assets/images/favicon/android-chrome-512x512.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-chrome-192x192.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
-	<link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico">
-    <!-- Font Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExoraGames — Making Communities Alive!</title>
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="ExoraGames — Making Communities Alive!">
+  <meta name="description" content="ExoraGames is a passionate Minecraft game development studio. We build immersive experiences that bring players together.">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://exoragames.io/">
+  <meta property="og:title" content="ExoraGames — Making Communities Alive!">
+  <meta property="og:description" content="ExoraGames is a passionate Minecraft game development studio. We build immersive experiences that bring players together.">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://exoragames.io/">
+  <meta property="twitter:title" content="ExoraGames — Making Communities Alive!">
+  <meta property="twitter:description" content="ExoraGames is a passionate Minecraft game development studio. We build immersive experiences that bring players together.">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="512x512" href="./assets/images/favicon/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-chrome-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico">
+  <!-- Google Fonts: Inter + Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <section class="banner">
-        <div class="container">
-            <h1 class="banner__title">Coming Soon</h1>
-            <p class="banner__text">In the meantime, Stay tuned. We are almost ready to launch.</p>
-        </div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#home" class="nav-logo">
+        <span class="logo-accent">EXORA</span><span class="logo-games">GAMES</span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#games" class="nav-link">Games</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#team" class="nav-link">Team</a>
+        <a href="#contact" class="nav-link nav-link--cta">Contact</a>
+      </nav>
+
+      <!-- Mobile hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <!-- Animated background particles -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="particle particle--1"></div>
+        <div class="particle particle--2"></div>
+        <div class="particle particle--3"></div>
+        <div class="particle particle--4"></div>
+        <div class="particle particle--5"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">Minecraft Game Studio</p>
+        <h1 class="hero-title">ExoraGames</h1>
+        <p class="hero-tagline">Making communities alive!</p>
+        <p class="hero-desc">We build immersive Minecraft experiences that bring players together.</p>
+        <a href="#games" class="btn btn--primary hero-cta">
+          Explore Our Games <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="hero-scroll__dot"></div>
+      </div>
     </section>
+
+    <!-- ===================== STATS BAR ===================== -->
+    <section class="stats" id="stats" aria-label="Studio statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item fade-in">
+            <span class="stat-number accent" data-target="2">0</span>
+            <span class="stat-label">Games</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item fade-in">
+            <span class="stat-number accent" data-target="5">0</span>
+            <span class="stat-label">Team Members</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item fade-in">
+            <span class="stat-number accent">1000<span class="stat-suffix">s</span></span>
+            <span class="stat-label">of Players</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item fade-in">
+            <span class="stat-number accent">
+              <i class="fa-brands fa-minecraft" aria-hidden="true"></i>
+            </span>
+            <span class="stat-label">Minecraft Platform</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GAMES ===================== -->
+    <section class="games section" id="games">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-eyebrow">What we've built</p>
+          <h2 class="section-title">Our Experiences</h2>
+        </div>
+
+        <div class="games-grid">
+          <!-- CrystalChaos -->
+          <article class="game-card fade-in">
+            <div class="game-card__thumbnail" aria-hidden="true">
+              <div class="game-thumb-placeholder game-thumb-placeholder--crystal">
+                <i class="fa-solid fa-gem" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="game-card__body">
+              <h3 class="game-card__title">CrystalChaos</h3>
+              <p class="game-card__desc">An epic Minecraft experience full of chaos and crystals. Battle, survive, and conquer!</p>
+              <a href="#" class="btn btn--outline game-card__btn">
+                Play Now <i class="fa-solid fa-play" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- FrootlySMP -->
+          <article class="game-card fade-in">
+            <div class="game-card__thumbnail" aria-hidden="true">
+              <div class="game-thumb-placeholder game-thumb-placeholder--frootly">
+                <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="game-card__body">
+              <h3 class="game-card__title">FrootlySMP</h3>
+              <p class="game-card__desc">A vibrant community-driven Minecraft SMP. Build, explore, and thrive together!</p>
+              <a href="#" class="btn btn--outline game-card__btn">
+                Play Now <i class="fa-solid fa-play" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="about-inner">
+          <div class="about-icon-wrap fade-in" aria-hidden="true">
+            <div class="about-icon">
+              <i class="fa-solid fa-cubes-stacked"></i>
+            </div>
+          </div>
+          <div class="about-content fade-in">
+            <p class="section-eyebrow">Who we are</p>
+            <h2 class="section-title">About ExoraGames</h2>
+            <p class="about-text">
+              ExoraGames is a passionate Minecraft game development studio dedicated to <strong>making communities alive</strong>. Founded by a team of 5 creative developers, we craft immersive multiplayer experiences that bring players together from around the world.
+            </p>
+            <p class="about-text">
+              Our mission is to build engaging, community-driven games on the Minecraft platform — games that players return to not just for fun, but for the friendships and stories they create.
+            </p>
+            <div class="about-badges">
+              <span class="badge"><i class="fa-brands fa-minecraft" aria-hidden="true"></i> Minecraft</span>
+              <span class="badge"><i class="fa-solid fa-users" aria-hidden="true"></i> Community First</span>
+              <span class="badge"><i class="fa-solid fa-fire" aria-hidden="true"></i> Passionate Team</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TEAM ===================== -->
+    <section class="team section" id="team">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-eyebrow">The people behind it</p>
+          <h2 class="section-title">Our Team</h2>
+        </div>
+
+        <div class="team-grid">
+          <!-- Member 1 -->
+          <div class="team-card fade-in">
+            <div class="team-card__avatar" aria-label="Founder avatar">
+              <span>FL</span>
+            </div>
+            <h3 class="team-card__name">Founder</h3>
+            <p class="team-card__role">Founder &amp; Lead Developer</p>
+          </div>
+          <!-- Member 2 -->
+          <div class="team-card fade-in">
+            <div class="team-card__avatar" aria-label="Game Designer avatar">
+              <span>GD</span>
+            </div>
+            <h3 class="team-card__name">Designer</h3>
+            <p class="team-card__role">Game Designer</p>
+          </div>
+          <!-- Member 3 -->
+          <div class="team-card fade-in">
+            <div class="team-card__avatar" aria-label="Builder avatar">
+              <span>BL</span>
+            </div>
+            <h3 class="team-card__name">Builder</h3>
+            <p class="team-card__role">Builder</p>
+          </div>
+          <!-- Member 4 -->
+          <div class="team-card fade-in">
+            <div class="team-card__avatar" aria-label="Community Manager avatar">
+              <span>CM</span>
+            </div>
+            <h3 class="team-card__name">Community</h3>
+            <p class="team-card__role">Community Manager</p>
+          </div>
+          <!-- Member 5 -->
+          <div class="team-card fade-in">
+            <div class="team-card__avatar" aria-label="Developer avatar">
+              <span>DV</span>
+            </div>
+            <h3 class="team-card__name">Developer</h3>
+            <p class="team-card__role">Developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="contact-inner">
+          <div class="contact-info fade-in">
+            <p class="section-eyebrow">Let's connect</p>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-desc">Interested in partnering with us or joining the team? Reach out — we'd love to hear from you!</p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Join our Discord server">
+                <i class="fa-brands fa-discord" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Follow us on Twitter / X">
+                <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Subscribe on YouTube">
+                <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form fade-in" id="contactForm" novalidate aria-label="Contact form">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Your name" autocomplete="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" autocomplete="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell us about yourself or your project…" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary form-submit">
+              Send Message <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="footer-logo">
+        <span class="logo-accent">EXORA</span><span class="logo-games">GAMES</span>
+      </a>
+      <p class="footer-tagline">Making communities alive!</p>
+      <div class="footer-socials">
+        <a href="#" class="social-link social-link--sm" aria-label="Discord">
+          <i class="fa-brands fa-discord" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="social-link social-link--sm" aria-label="Twitter / X">
+          <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="social-link social-link--sm" aria-label="YouTube">
+          <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2026 ExoraGames. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
